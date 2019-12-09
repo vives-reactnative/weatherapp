@@ -1,8 +1,4 @@
-import React, { Component } from 'react';
-import WeatherDetail from './src/screens/WeatherDetail';
+import { createAppContainer } from 'react-navigation';
+import { RootNavigator } from './src/config/AppNavigator';
 
-export default class App extends Component {
-  render() {
-    return <WeatherDetail />;
-  }
-}
+export default createAppContainer(RootNavigator);
